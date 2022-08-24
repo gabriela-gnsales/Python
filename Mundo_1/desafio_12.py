@@ -1,4 +1,4 @@
-# Preço de produto com desconto
+# Calculando descontos
 
 p = float(input('Digite o preço do produto: R$ '))
 
