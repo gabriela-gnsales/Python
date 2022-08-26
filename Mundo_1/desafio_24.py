@@ -1,0 +1,1 @@
+# Verificando as primeiras letras de um texto
