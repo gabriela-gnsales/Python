@@ -7,16 +7,20 @@ print('-=' * 10)
 print('\033[1;32mGAME: Jokenpô\033[m')
 print('-=' * 10)
 
-jogador = int(input('''Qual sua opção:
-\033[1;31m*\033[m \033[1;36m1\033[m PEDRA
-\033[1;31m*\033[m \033[1;36m2\033[m PAPEL
-\033[1;31m*\033[m \033[1;36m3\033[m TESOURA
-'''))
+jogador = int(input('''Opções:
+[\033[1;36m1\033[m] PEDRA
+[\033[1;36m2\033[m] PAPEL
+[\033[1;36m3\033[m] TESOURA
+Qual a sua jogada? '''))
 
 computador = randint(1, 3)
 
-print('\033[7;3740mPROCESSANDO...\033[m')
-sleep(2)
+print('\033[7;3740mJO\033[m')
+sleep(1)
+print('\033[7;3740mKEN\033[m')
+sleep(1)
+print('\033[7;3740mPO!!!\033[m')
+
 print(f'A opção escolhida pelo computador foi a \033[1;36m{computador}\033[m.')
 
 # pedra ganha da tesoura -> 1 ganha 3

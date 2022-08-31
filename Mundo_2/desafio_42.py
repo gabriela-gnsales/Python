@@ -16,5 +16,5 @@ if lado1 < lado2 + lado3 and lado2 < lado1 + lado3 and lado3 < lado1 + lado2:
         print('Isósceles.')
     else:
         print('Escaleno.')
-else:
+else:  # lado1 != lado2 != lado3 != lado1
     print('\033[1;31mNão é triângulo!\033[m')

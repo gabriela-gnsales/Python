@@ -1,5 +1,7 @@
 # Gerenciador de pagamentos
 
+print('{:=^40}'.format(' LOJAS GUANABARA '))
+
 preco_normal = float(input('Preço normal: R$ '))
 condicao_pagamento = int(input('''Informe a condição de pagamento:
 \033[1;31m*\033[m \033[1;36m1\033[m à vista dinheiro/cheque: 10% de desconto
