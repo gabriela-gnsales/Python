@@ -15,7 +15,7 @@ print('-=-' * 20)
 
 jogador = int(input('Em que número eu pensei? '))  # Jogador tenta adivinhar
 
-print('PROCESSANDO...')
+print('\033[7;3740mPROCESSANDO...\033[m')
 sleep(2)
 
 if jogador == computador:

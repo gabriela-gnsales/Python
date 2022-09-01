@@ -2,8 +2,14 @@
 
 frase = input('Digite uma frase: ').strip().replace(' ', '').lower()
 
-print('Frase:', frase)
+print('-=' * 20)
 
+# quando precisa tirar espaços extras no meio da frase
+# frase_2 = input('Digite uma frase: ').strip().lower().split()
+# frase_2_n = ' '.join(frase_2)
+# print('Frase 2:', frase_2_n)
+
+print('Frase:', frase)
 frase_invertida = frase[::-1]
 print('Frase invertida:', frase_invertida)
 
@@ -16,5 +22,15 @@ if c == len(frase):
 else:
     print('A frase NÃO é um palíndromo!')
 
-# for i in range(len(frase)-1, -1, -1):
-#     print(frase[i])
+print('-=' * 20)
+
+# OUTRO MODO
+inverso = ''
+for letra in range(len(frase)-1, -1, -1):
+    inverso += frase[letra]
+print(frase, '->', inverso)
+
+if inverso == frase:
+    print('A frase é um PALÍNDROMO!')
+else:
+    print('A frase NÃO é um palíndromo!')
