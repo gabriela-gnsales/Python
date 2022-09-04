@@ -18,6 +18,9 @@ print('EX IF-ELSE SIMPLIFICADO')
 tempo = int(input('Quantos anos tem seu carro? '))
 print('Carro novo' if tempo <= 3 else 'Carro velho')
 
+# FORMATAÇÃO STRING
+print('{:-^40}'.format(' TÍTULO '))
+
 '''
 CORES
 

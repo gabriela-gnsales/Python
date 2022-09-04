@@ -1,26 +1,23 @@
 # Maior e menor valores
 
 resp = 'S'
-i = soma = maior = 0
-menor = 999
+i = soma = maior = menor = 0
 
-while resp == 'S':
-
+while resp in 'S':  # OUTRO MODO: while resp == 'S':
     n = int(input(f'\033[1;34;40m{i + 1}º valor:\033[m '))
-    resp = input('Quer continuar [S/N]? ').strip().upper()
-
+    resp = input('Quer continuar [S/N]? ').strip().upper()[0]
     while resp != 'S' and resp != 'N':
         print('Opção inválida!')
-        resp = input('Quer continuar [S/N]? ').strip().upper()
-
+        resp = input('Quer continuar [S/N]? ').strip().upper()[0]
+    if i == 0:
+        maior = menor = n
+    else:
+        if n > maior:
+            maior = n
+        if n < menor:
+            menor = n
     soma += n
     i += 1
-
-    if n > maior:
-        maior = n
-
-    if n < menor:
-        menor = n
 
 print('\033[1;34m-\033[m' * 50)
 

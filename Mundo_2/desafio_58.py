@@ -10,7 +10,7 @@ print('=-' * 10)
 max = 10
 
 computador = randint(1, max)
-
+'''
 resposta = 's'
 
 while resposta == 's':
@@ -50,3 +50,12 @@ while resposta == 's':
 print('=-' * 10)
 print('\033[7;37;40mFIM DO JOGO\033[m')
 print('=-' * 10)
+'''
+# OUTRO MODO
+
+acertou = False
+while not acertou:
+    jogador = int(input('Qual seu palpite? '))
+    if jogador == computador:
+        acertou = True
+print('Acertou!')
