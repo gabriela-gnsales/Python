@@ -101,6 +101,15 @@ c[2] = 12
 print(f'Lista A: {a}')
 print(f'Lista C: {c}')
 
+galera = list()
+dado = []
+for c in range(3):
+    dado.append(input('Nome: '))
+    dado.append(int(input('Idade: ')))
+    galera.append(dado[:])
+    dado.clear()
+print('galera:', galera)
+
 '''
 CORES
 
