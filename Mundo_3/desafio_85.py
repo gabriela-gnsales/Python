@@ -28,7 +28,7 @@ for c in range(1, 8):
     else:
         num[1].append(valor)
 print('=' * 40)
-print('Todos os valores pares:', num)
+print('Todos os valores:', num)
 # num[0].sort()
 # num[1].sort()
 print('Valores pares:', sorted(num[0]))
