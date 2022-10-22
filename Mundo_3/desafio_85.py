@@ -33,5 +33,3 @@ print('Todos os valores:', num)
 # num[1].sort()
 print('Valores pares:', sorted(num[0]))
 print('Valores ímpares:', sorted(num[1]))
-
-

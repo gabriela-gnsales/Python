@@ -2,10 +2,13 @@
 
 from random import randint
 from time import sleep
+import titulos
 
-print('=' * 60)
-print('{:^60}'.format('JOGO DA MEGA SENA'))
-print('=' * 60)
+titulos.titulo1('=', 60, 'JOGO DA MEGA SENA')
+# print('=' * 60)
+# texto = 'JOGO DA MEGA SENA'
+# print(f'{texto:^60}')
+# print('=' * 60)
 
 cont_jogos = 1
 while True:
@@ -29,9 +32,11 @@ while True:
         jogos_temp.clear()
 
     if num_jogos > 1:
-        print('{:-^60}'.format(f' SORTEANDO {num_jogos} JOGOS DE {qtd_num} NÚMEROS '))
+        titulos.titulo2('-', 60, f' SORTEANDO {num_jogos} JOGOS DE {qtd_num} NÚMEROS ')
+        # print('{:-^60}'.format(f' SORTEANDO {num_jogos} JOGOS DE {qtd_num} NÚMEROS '))
     else:
-        print('{:-^60}'.format(f' SORTEANDO {num_jogos} JOGO DE {qtd_num} NÚMEROS '))
+        titulos.titulo2('-', 60, f' SORTEANDO {num_jogos} JOGO DE {qtd_num} NÚMEROS ')
+        # print('{:-^60}'.format(f' SORTEANDO {num_jogos} JOGO DE {qtd_num} NÚMEROS '))
 
     # for jogo in jogos:
     #     sleep(0.7)
@@ -54,4 +59,4 @@ while True:
     if 'N' in continuar:  # if continuar in 'N':
         break
 
-print('{:-^60}'.format(' BOA SORTE! '))
+titulos.titulo2('-', 60, ' BOA SORTE! ')

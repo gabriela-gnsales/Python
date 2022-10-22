@@ -15,7 +15,7 @@ while True:
             maior = temporaria[1]
         if temporaria[1] < menor:
             menor = temporaria[1]
-    principal.append(temporaria[:])
+    principal.append(temporaria[:])  # [:] faz uma cópia da lista 'temporaria'
     temporaria.clear()
 
     r = input('Deseja continuar cadastrando [S/N]: ').strip().upper()[0]
